@@ -9,12 +9,32 @@ const round = document.getElementsByClassName("output-round")[0];
 const Bscissors = document.getElementById("scissor");
 const Bpaper = document.getElementById("paper");
 const Brock = document.getElementById("rock");
+const popUpWindow =  document.getElementsByClassName("popup")[0]
+document.getElementById("play-again-btn").addEventListener("click",function(){
+    popUpWindow.classList.remove("active");
+    refresh()
+});
+
 
 
 
 
 let humanWonRounds = 0;
 let computerWonRounds = 0;
+
+function refresh () {
+    deleteChild(humanCurrentOption,computerCurrentOption)
+    winner.innerText = null
+    round.innerText = null
+    humanResult.innerText = "human: ?"
+    computerResult.innerText = "Computer: ?"
+    Bscissors.disabled = false
+    Brock.disabled = false
+    Bpaper.disabled = false
+    humanWonRounds = 0
+    computerWonRounds = 0
+
+}
 
 function deleteChild(humanCurrentOption, computerCurrentOption) {
 
@@ -163,6 +183,12 @@ const updateDOM =(humanRounds, ComputerRounds,humanChoice, computerChoice, messa
     humanResult.innerText = `Human: ${humanWonRounds}`;
     computerResult.innerText = `Computer: ${computerWonRounds}`;
     round.innerText = message;
+    if(humanWonRounds===5 || computerWonRounds===5) {
+        Bscissors.disabled = true
+        Brock.disabled = true
+        Bpaper.disabled = true
+        popUpWindow.classList.add("active")
+    }
 
 
 

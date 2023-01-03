@@ -1,0 +1,140 @@
+body  {
+    font-family: 'Fairy Tale', sans-serif;
+    margin: 0px;
+    display: flex;
+    flex-flow: column;
+    height:100vh;
+    background-color: rgba(243, 62, 255, 1);
+    background-image: linear-gradient(103deg, rgba(243, 62, 255, 1) 0%, rgba(224, 20, 224, 1) 20%, rgba(184, 39, 206, 1) 40%, rgba(155, 6, 175, 1) 60%, rgba(139, 6, 179, 1) 80%, rgba(85, 57, 156, 1) 100%);
+}
+
+
+.game-container {;
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+.output-round {
+    margin-top: 10px;
+    height: 35px;
+    width: 230px;
+    text-align: center
+}
+
+.output-round {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Fairy Tale', sans-serif;
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 26px 42px rgba(213, 39, 197, 0.58);
+    border-radius: 50px;
+    margin-top: 0px;
+}
+
+.header img {
+    height: auto;
+    width: 300px;
+    padding-bottom: 20px;
+}
+
+
+.game-menu {
+    height: 500px;
+    width: 700px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: rgba(134, 23, 159, 0.07);
+    box-shadow: 0 26px 42px rgba(7, 4, 7, 0.58);
+    border-radius: 25px;
+
+
+}
+
+.game-menu .output-round {
+    align-self: center;
+}
+
+.game {
+    display: flex;
+    justify-content: space-between;
+    gap: 125px
+}
+
+.options button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    /**transition: transform 0.7s ease-in-out**/;
+    transition: transform .34s ease-in-out;
+    border-radius: 150%;
+    padding: 0;
+
+
+}
+
+.options button:hover {
+    transform: rotate(360deg);
+    box-shadow: 0px 1px 1px 6px rgba(204, 20, 105, 0.86)
+}
+
+.human-current-option,
+.computer-current-option {
+    width: 80px;
+    height: 80px;
+
+}
+
+
+.options img,
+.human.current-option img,
+.computer-current-option img {
+
+    width: 70px;
+    height: 70px;
+    padding: 0px;
+
+}
+
+.human.current-option img {
+    width: 70px;
+    height: 70px;
+
+}
+
+.human-panel p,
+.computer-panel p {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.human-panel,
+.computer-panel {
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.final-outcome {
+    margin-top: 50px;
+    font-size: 60px;
+}
+
+
+
+
+
+

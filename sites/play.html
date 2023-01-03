@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game</title>
+    <link href="https://fonts.cdnfonts.com/css/fairy-tale" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/game.css">
+
+</head>
+<body>
+<div class="header">
+    <div class="img">
+        <img src="../images/header.png" alt="rock paper scissors"/>
+    </div>
+</div>
+<div class="game-container">
+    <div class="game-menu">
+        <div class="output-round">...
+        </div>
+        <div class="game">
+          <div class="human-panel">
+              <p id="human-result">human: ?</p>
+            <div class="human-current-option">
+            </div>
+            <div class="options">
+                <button value ="scissor" id="scissor">
+                    <img src="../images/scissor.png">
+                </button>
+                <button value ="paper"  id="paper">
+                    <img src="../images/paper.png">
+                </button>
+                <button value="rock" id="rock">
+                    <img src="../images/rock.png">
+                </button>
+
+            </div>
+          </div>
+          <div class="computer-panel">
+              <p id="computer-result">Computer: ?</p>
+            <div class="computer-current-option">
+            </div>
+            <div class="options">
+                <button>
+                    <img src="../images/scissor.png">
+                </button>
+                <button >
+                    <img src="../images/paper.png">
+                </button>
+                <button >
+                    <img src="../images/rock.png">
+                </button>
+
+            </div>
+
+          </div>
+    </div>
+    <div class="final-outcome">
+    </div>
+  </div>
+</div>
+
+<script src="../scripts/game.js"></script>
+</body>
+</html>

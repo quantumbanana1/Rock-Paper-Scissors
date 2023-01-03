@@ -1,0 +1,66 @@
+body  {
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(243, 62, 255, 1);
+    background-image: linear-gradient(103deg, rgba(243, 62, 255, 1) 0%, rgba(224, 20, 224, 1) 20%, rgba(184, 39, 206, 1) 40%, rgba(155, 6, 175, 1) 60%, rgba(139, 6, 179, 1) 80%, rgba(85, 57, 156, 1) 100%);
+}
+
+
+
+
+
+.container {
+    padding: 20px 10px 20px 10px;
+    /*background: rgba(15, 8, 44, 0.78);*/
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 26px 42px rgba(0, 0, 0, 0.24);
+    width: 650px;
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 50px;
+    border-radius: 10px;
+
+
+}
+
+.the-intro p {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+button {
+    box-sizing: border-box;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 13px 21px rgba(0, 0, 0, 0.05);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform .34s;
+    border-radius: 200px
+}
+
+.play-the-game  {
+    display: flex;
+    gap: 20px;
+
+}
+
+.play-the-game button {
+    height: 50px;
+    width: 95px;
+}
+
+button:hover {
+    -ms-transform: scale(0.5); /* IE 9 */
+    -webkit-transform: scale(0.5); /* Safari 3-8 */
+    transform: scale(1.1);
+    background-color: #F065D6;
+    color: white;
+    box-shadow: 0 5px 15px 5px rgb(231, 135, 250);
+}
+
+
+

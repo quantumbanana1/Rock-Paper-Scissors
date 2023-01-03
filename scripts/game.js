@@ -142,11 +142,11 @@ const PlayTheGame = (humanChoice, computerChoice, images) => {
 
     } else if (humanChoice==="rock" && computerChoice==="paper") {
         message = "Computer won this round!";
-        humanWonRounds += 1;
+        computerWonRounds += 1;
 
     } else  {
         message = "Human won this round!";
-        computerWonRounds += 1;
+        humanWonRounds += 1;
 
     }
 
